@@ -64,7 +64,7 @@
 	    houseBio.textContent = 'House ${houseInfo[this.dataset.offset][1]}';
 }
 
-    sigils.forEach(sigil => sigil.addEventListener("click, showLightbox));
+    sigils.forEach(sigil => sigil.addEventListener("click", showLightbox));
 
     // sigils.forEach(sigil => sigil.addEventListener("click", animateBanner));
 
