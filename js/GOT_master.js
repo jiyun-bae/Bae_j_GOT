@@ -24,13 +24,16 @@
 		let house = this.classList[1],
 		    targetSource = house.charAt(0).toUpperCase() + house.slice(1);
 
-		lbVideo.src = 'video/House-${targetSource}.mp4';
-		lbVideo.load();
+		
+		
 		// debugger;
 		lbVideo.play();
 
 	if (lbVideo.paused) {
+		lbVideo.src = 'video/House-${targetSource}.mp4';
+		lbVideo.load();
     	lbVideo.play();
+
     } else {
     	lbVideo.currentTime = 0;
     	
